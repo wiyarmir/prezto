@@ -12,10 +12,13 @@ fi
 
 export PATH=/usr/local/bin:$PATH
 export ANDROID_HOME=~/Library/Android/sdk
-
+export ANDROID_SDK_PATH=$ANDROID_HOME
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$HOME/go/bin
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH=$HOME/bin:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
