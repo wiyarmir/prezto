@@ -38,8 +38,8 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'ssh' \
   'utility' \
-  'completion' \
   'git' \
+  'completion' \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'

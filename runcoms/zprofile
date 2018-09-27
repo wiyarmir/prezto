@@ -1,3 +1,4 @@
+
 #
 # Executes commands at login pre-zshrc.
 #
@@ -49,6 +50,7 @@ path=(
   /usr/local/git/bin
   /sw/bin
   $ANDROID_HOME/platform-tools
+  $ANDROID_HOME/platform-tools/systrace
   $ANDROID_HOME/tools
   /usr/local/opt/go/libexec/bin
   ~/go/bin
@@ -82,4 +84,7 @@ fi
 #
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs command_execution_time rvm nvm)
+POWERLEVEL9K_VCS_GIT_HOOKS=(vcs-detect-changes git-aheadbehind git-remotebranch git-tagname)
+POWERLEVEL9K_VCS_SHOW_SUBMODULE_DIRTY=false
+
