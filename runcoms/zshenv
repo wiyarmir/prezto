@@ -12,6 +12,7 @@ fi
 
 export PATH=/usr/local/bin:$PATH
 export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_SDK=$ANDROID_HOME
 export ANDROID_SDK_PATH=$ANDROID_HOME
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$HOME/go/bin
