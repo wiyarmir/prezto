@@ -10,6 +10,8 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+export JAVA_HOME=$(/usr/libexec/java_home -v14);
+
 export PATH=/usr/local/bin:$PATH
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK=$ANDROID_HOME
